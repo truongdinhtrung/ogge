@@ -203,7 +203,7 @@ function ListOrder() {
                     className="px-4 py-2 bg-[#EF4C2B] text-white rounded flex items-center space-x-2 hover:text-white hover:border-[#EF4C2B] hover:border-[3px]"
                     onClick={() => handleConfirmComplete(order)}
                   >
-                    <span>Nhận đơn</span>
+                    <span>Hoàn thành</span>
                     <svg 
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 border-white border-[3px] rounded-[5px]  "
@@ -222,8 +222,6 @@ function ListOrder() {
       ) : (
         <p className="text-center">Không có đơn hàng nào.</p>
       )}
-
-      {/* Confirmation Modal */}
       {selectedOrder && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div ref={confirmationRef} className="bg-white p-5 rounded-lg shadow-lg">
@@ -243,8 +241,8 @@ function ListOrder() {
                 <button
                   className="px-4 py-2 bg-gray-300 text-black rounded hover:bg-gray-400"
                   onClick={() => {
-                    setSelectedOrder(null); // Close the modal by clearing the selected order
-                    setConfirmationAction(null); // Reset the confirmation action
+                    setSelectedOrder(null); 
+                    setConfirmationAction(null); 
                   }}
                 >
                   Đóng

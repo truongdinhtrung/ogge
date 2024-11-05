@@ -19,11 +19,6 @@ function HeaderUser() {
                         <Link to='/home-page'>
                             <img src={LogoWeb} className="w-[120px] sm:w-[200px] mb-2 sm:mb-0" alt="Logo Web" />  
                         </Link>
-                        <input 
-                            type="text"
-                            placeholder="Tìm kiếm món yêu thích"
-                            className="border-2 w-[250px] ml-12 rounded-full border-[#d0d0d0] px-5 focus:outline-none focus:border-[#ff7e00]"
-                        />
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-12 items-center relative">
                         <div className='mt-2 sm:mt-0'>

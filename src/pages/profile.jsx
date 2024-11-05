@@ -12,7 +12,7 @@ function Profile() {
     fullName: '',
     birthYear: '',
     gender: '',
-    idNumber: '',
+    phoneNumber: '',
     address: '',
     driverLicense: '',
     vehicleOwnership: '',
@@ -58,7 +58,7 @@ function Profile() {
                 <p>{formData.email}</p>
                 <hr className="my-2" />
                 <Link to="/profile" className="block cursor-pointer hover:text-gray-700">Profile</Link>
-                <Link to="/orders" className="block cursor-pointer hover:text-gray-700">Đơn hàng</Link>
+                <Link to="/oder" className="block cursor-pointer hover:text-gray-700">Đơn hàng</Link>
                 <Link to="/revenue" className="block cursor-pointer hover:text-gray-700">Doanh thu</Link>
               </div>
             )}
@@ -76,7 +76,7 @@ function Profile() {
               { label: 'Họ và tên', name: 'fullName' },
               { label: 'Năm sinh', name: 'birthYear' },
               { label: 'Giới tính', name: 'gender' },
-              { label: 'CCCD', name: 'idNumber' },
+              { label: 'Số điện thoại', name: 'phoneNumber' },
               { label: 'Địa chỉ', name: 'address' },
               { label: 'Giấy phép lái xe', name: 'driverLicense' },
               { label: 'Giấy sở hữu xe', name: 'vehicleOwnership' },
